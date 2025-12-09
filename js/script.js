@@ -1,13 +1,1 @@
-(function () {
-  // Image fade-in logic
-  window.addEventListener('load', function () {
-    const imgs = document.querySelectorAll('.card img');
-    imgs.forEach(img => {
-      if (img.complete) {
-        img.classList.add('loaded');
-      } else {
-        img.addEventListener('load', () => img.classList.add('loaded'));
-      }
-    });
-  });
-})();
+!function () { window.addEventListener("load", function () { const e = document.querySelectorAll(".card img"); e.forEach(e => { e.complete ? e.classList.add("loaded") : e.addEventListener("load", () => e.classList.add("loaded")) }) }) }();
